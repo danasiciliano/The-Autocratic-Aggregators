@@ -4,14 +4,16 @@
 <div class="container">
     <!-- All links-->
     {%for link in links %}
-    <a href="{{link['Link']}}">
-        <div class="card" style="width: 18rem;">
-            <div class="card-title">{{link['Name']}}</div>
-            <img class="card-img-top" src="{{link['Image']}}" alt="{{link['Name']}} Image">
-            <div class="card-body">
-                <p class="card-text"></p>
+    <div class="row">
+        <a href="{{link['Link']}}">
+            <div class="card" style="width: 18rem;">
+                <div class="card-title">{{link['Name']}}</div>
+                <img class="card-img-top" style="height: 10rem; width: 12rem" src="{{link['Image']}}" alt="{{link['Name']}} Image">
+                <div class="card-body">
+                    <p class="card-text"></p>
+                </div>
             </div>
-        </div>
-    </a>
+        </a>
+    </div>
     {%endfor%} {%endblock%}
 </div>

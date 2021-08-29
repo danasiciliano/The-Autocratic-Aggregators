@@ -1,8 +1,8 @@
 import csv
-
+filepath = "database/"
 def get_questions(filename):
     form_questions = dict()
-    with open(filename) as f:
+    with open(filepath+filename) as f:
         isQuestion = True
         question = ""
         options = []
@@ -24,7 +24,7 @@ def get_info_from_csv(filename):
     data = dict()
      
     # Open a csv reader called DictReader
-    with open(filename, encoding='utf-8') as f:
+    with open(filepath+filename, encoding='utf-8') as f:
         csvReader = csv.DictReader(f)
         for rows in csvReader:
             key = rows['ID']
@@ -34,6 +34,6 @@ def get_info_from_csv(filename):
 def get_links_from_service(data, serviceType):
     links = list()
     for _, val in data.items():
-        if val['Service'].strip() == serviceType:
+        if val['Service'].strip() in serviceType or serviceType in val['Service'].strip():
             links.append({'Name': val['Name'], 'Link': val['Link'], 'Image': val['Image']})
     return links

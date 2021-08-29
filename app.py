@@ -12,9 +12,9 @@ def form():
 def submit():
     answers = ""
     req = request.form.get("0", False)
-    print(request.form)
     resources_dict = get_info_from_csv("resources.csv")
     links = get_links_from_service(resources_dict, req)
+    print(links)
     return render_template("result.html", links=list(links))
 
 
