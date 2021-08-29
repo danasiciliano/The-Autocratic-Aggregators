@@ -1,0 +1,40 @@
+What are you looking for to get help today?
+Food 
+Covid Relief 
+Health Waiver
+Workshops/Counseling
+Job Securing
+Personal Finance Lessons
+Utilities
+Taxes
+
+Age range
+<18
+18-40
+40-60
+>60
+
+What is your current Marital Status?
+Single
+Married
+
+What is your income range?
+Less than $10,000
+$10,000 to $24,999
+$25,000 to $34,999
+$35,000 to $49,999
+$50,000 to $74,999
+$75,000 to $99,999
+Over $100,000
+
+Are you enrolled in any 2-year/4-year college?
+Yes
+No
+
+Are you a parent?
+Yes 
+No
+
+Location
+Georgia
+
