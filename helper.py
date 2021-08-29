@@ -35,5 +35,5 @@ def get_links_from_service(data, serviceType):
     links = list()
     for _, val in data.items():
         if val['Service'].strip() in serviceType or serviceType in val['Service'].strip():
-            links.append({'Name': val['Name'], 'Link': val['Link'], 'Image': val['Image']})
+            links.append({'Name': val['Name'], 'Link': val['Link'], 'Image': val['Image'], 'Description': val['Description']})
     return links

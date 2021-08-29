@@ -4,13 +4,13 @@
 <div class="container">
     <!-- All links-->
     {%for link in links %}
-    <div class="row">
+    <div class="row" style="flex:left">
         <a href="{{link['Link']}}">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 22rem;">
                 <div class="card-title">{{link['Name']}}</div>
                 <img class="card-img-top" style="height: 10rem; width: 12rem" src="{{link['Image']}}" alt="{{link['Name']}} Image">
                 <div class="card-body">
-                    <p class="card-text"></p>
+                    <p class="card-text">{{link['Description']}}</p>
                 </div>
             </div>
         </a>
