@@ -8,6 +8,7 @@ The format of the form's response to the user is simple to read and understand, 
 
 Our presentation of the project in a slideshow: 
 
+[FISPRESENTATION.pptx](https://github.com/danasiciliano/The-Autocratic-Aggregators/files/7072616/FISPRESENTATION.pptx)
 
 
 ## Help
