@@ -19,10 +19,10 @@ Our presentation of the project in a slideshow:
 #### Requirement
 Python 3.x
 #### In command prompt or terminal:
-[This installs Flask on your machine]
-python -m pip install -r requirements.txt
-[To run:]
-python app.py
+[This installs Flask on your machine]<br>
+python -m pip install -r requirements.txt<br>
+[To run:]<br>
+python app.py<br>
 ***
 ## Authors
 
