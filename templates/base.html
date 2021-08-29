@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Form</title>
+    <title>FinAgg</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,7 +22,63 @@
 
 <body>
     <div class="container">
-        {%block body%} {%endblock%}
+
+        <div id="topPan"> <img src="{{ url_for('static', filename='images/unnamed.png') }}" alt="FinAgg" width="0" height="0" border="0" class="logo" title="FinAgg" />
+            <p>FinAgg Financial Support Resource Generator </p>
+        </div>
+        <div id="bodyPan">
+            <div id="bodyLeftPan">
+                <h2><span>Why</span> use the FinAgg Financial Support Resource Generator? </h2>
+                <br>
+                <br>
+                <p>This Resource Generator is a tool that helps introduce people in need to various support services. The Generator is focused on services that actively offer support to those facing financial hardships through long-term solutions such as
+                    career training programs and financial literacy workshops.</p>
+
+                <ul>
+                    <li><a href="#">Importance of Career Training Programs</a></li>
+                    <li><a href="#">Impact of Financial Literacy Workshops</a> </li>
+                </ul>
+                <p class="more"><a href="#">more</a></p>
+                <a href="#form">
+                    <h3><span>Resource</span> Form</h3>
+                </a>
+                <div id="form">
+                    {%block body%} {%endblock%}
+                </div>
+                <div id="bodyLeftNextPan">
+                    <p class="next"><a href="#">next</a></p>
+                </div>
+            </div>
+            <div id="bodyRightPan">
+                <h2><span>few</span> tips</h2>
+                <ul>
+                    <li><a href="#">lorem ipsum dolor sit</a> </li>
+                    <li><a href="#">Amet, consectetuer</a> </li>
+                    <li><a href="#">Amet, consectetuer</a> </li>
+                    <li><a href="#">Bibendum nunc. Lorem</a> </li>
+                    <li><a href="#">Ipsum dolor sit amet, </a> </li>
+                    <li><a href="#">Consectetuer adipiscinrt.</a> </li>
+                    <li><a href="#">Integer porta enim vel mi.</a> </li>
+                    <li><a href="#">Vivamus at mi.Ut</a> </li>
+                </ul>
+                <h3><span>latest</span> updates</h3>
+                <p class="boldtext">on 03rd october 2006</p>
+                <p>lorem ipsum dolor sit Ametert, consectetue Adipiscingelitedo mol Bibendum</p>
+                <p class="more"><a href="#">more</a></p>
+                <p class="boldtext">on 03rd october 2006</p>
+                <p>lorem ipsum dolor sit Ametert, consectetue Adipiscingelitedo mol Bibendum</p>
+                <p class="more"><a href="#">more</a></p>
+            </div>
+        </div>
+        <div id="footermainPan">
+            <div id="footerPan">
+                <p class="copyright">FinAgg. All right reserved.</p>
+                <ul class="FinAgg">
+                    <li>design by:</li>
+                    <li><a href="#" target="_blank">FinAgg</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
