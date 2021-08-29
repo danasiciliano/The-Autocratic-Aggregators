@@ -15,7 +15,15 @@ Our presentation of the project in a slideshow:
 
 *Currently the form and support resource database is only geared towards the state of Georgia. 
 
-
+## How to run the code
+#### Requirement
+Python 3.x
+#### In command prompt or terminal:
+[This installs Flask on your machine]
+python -m pip install -r requirements.txt
+[To run:]
+python app.py
+***
 ## Authors
 
 * Aayog Koirala
